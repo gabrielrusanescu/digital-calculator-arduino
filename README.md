@@ -6,7 +6,6 @@ This repository contains the firmware for an Arduino-based calculator that utili
 
 ## Features
 
-* **Interactive Welcome Screen**: Displays introductory credentials including "UNIBUC FMI 2026" and developer attribution ("Rusanescu Gabriel") upon startup.
 * **Standard Arithmetic Operations**: Supports basic calculations including addition, subtraction, multiplication, and division.
 * **Division-by-Zero Protection**: Features error-handling logic that intercepts divisions by zero and outputs a warning message on the screen.
 * **Negative Number Configuration**: Allows the processing and initiation of negative values directly via the keypad layout.
@@ -53,8 +52,8 @@ The layout mapping array correlates keys to their respective characters:
 ## Software Dependencies
 
 To compile and upload this project, ensure you have the following libraries installed in your Arduino IDE:
-* `LiquidCrystal.h` (Built-in)
-* `Keypad.h` (Available via the Arduino Library Manager)
+* `LiquidCrystal.h`
+* `Keypad.h`
 
 ---
 
