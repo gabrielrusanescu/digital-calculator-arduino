@@ -64,4 +64,4 @@ To compile and upload this project, ensure you have the following libraries inst
    * Mathematical operators (`+`, `-`, `*`, `/`) segment inputs into distinct string variables.
    * The `=` key converts the captured string segments into double-precision floating-point numbers, processes the operation, and displays the outcome on the screen.
    * The decimal point key (`.`) includes input filtering to prevent duplicate decimal formatting within a single numeric string.
-3. **Error Management**: If a user attempts to divide an operand by zero, the LCD screen clears, prints a temporary error notification ("S-a incercat impartirea la 0"), and resets the evaluation state safely to 0.
+3. **Error Management**: If a user attempts to divide an operand by zero, the LCD screen clears, prints a temporary error notification ("S-a incercat impartirea la 0" - meaning division by zero was tried), and resets the evaluation state safely to 0.
