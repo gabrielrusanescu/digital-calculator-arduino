@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "author": "Dorttog Dorttog",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 19.8, "left": 18.6, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -159.77, "left": -3.2, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -92.05,
+      "left": 326.4,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -222.8,
+      "left": 495.2,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "lcd1:VSS", "uno:GND.1", "green", [ "v28.8", "h105.3" ] ],
+    [ "lcd1:VDD", "uno:5V", "magenta", [ "v278.4", "h140.3" ] ],
+    [ "lcd1:V0", "uno:GND.2", "cyan", [ "v38.4", "h268.5", "v220.8", "h-124.8" ] ],
+    [ "lcd1:RS", "uno:12", "yellow", [ "v9.6", "h96.3", "v19.2" ] ],
+    [ "lcd1:E", "uno:11", "magenta", [ "v48", "h86.4" ] ],
+    [ "lcd1:D4", "uno:10", "orange", [ "v-28.8", "h76.8", "v76.8", "h-29.5" ] ],
+    [ "lcd1:D5", "uno:9", "red", [ "v-19.2", "h57.7", "v48", "h-19.2" ] ],
+    [ "lcd1:D6", "uno:8", "#8f4814", [ "v-19.2", "h67.4", "v48", "h-19.6" ] ],
+    [ "lcd1:D7", "uno:7", "gold", [ "v-9.6", "h86.7", "v38.4", "h-19.2" ] ],
+    [ "lcd1:A", "r1:1", "violet", [ "v9.6", "h153.5" ] ],
+    [
+      "keypad1:R1",
+      "uno:5",
+      "red",
+      [ "v-9.6", "h-134.4", "v-105.6", "h-220.8", "v19.2", "h-19.2" ]
+    ],
+    [
+      "keypad1:R2",
+      "uno:4",
+      "orange",
+      [ "v9.6", "h-19.6", "v-9.6", "h-134.4", "v-96", "h-211.2" ]
+    ],
+    [
+      "keypad1:R3",
+      "uno:3",
+      "magenta",
+      [
+        "v9.6",
+        "h-0.3",
+        "v0",
+        "h-9.6",
+        "v0",
+        "h0",
+        "v9.6",
+        "h-28.8",
+        "v-9.6",
+        "h-134.4",
+        "v-86.4",
+        "h-38.4",
+        "v-28.8",
+        "h-76.8",
+        "v19.2",
+        "h-28.8",
+        "v19.2",
+        "h-48"
+      ]
+    ],
+    [ "keypad1:R4", "uno:2", "gold", [ "v28.8", "h-192.2", "v-86.4", "h-182.4" ] ],
+    [ "keypad1:C1", "uno:A3", "#8f4814", [ "v38.4", "h-307.3", "v86.4", "h-67.2" ] ],
+    [ "keypad1:C2", "uno:A2", "red", [ "v57.6", "h-403.2" ] ],
+    [ "keypad1:C3", "uno:A1", "yellow", [ "v48", "h-412.95", "v19.2" ] ],
+    [ "keypad1:C4", "uno:A0", "violet", [ "v86.4", "h-317.1", "v-19.2", "h-124.8" ] ],
+    [ "r1:2", "uno:5V", "yellow", [ "v-96", "h-433.2", "v451.2", "h220.8" ] ],
+    [ "lcd1:RW", "uno:GND.3", "green", [ "v220.8", "h134.3" ] ],
+    [ "lcd1:K", "uno:GND.3", "#8f4814", [ "v-38.4", "h-172.8", "v249.6", "h201.6" ] ]
+  ],
+  "dependencies": {}
+}
